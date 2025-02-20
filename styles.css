@@ -1,0 +1,246 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    }
+
+body{
+        background-color: #0A0A0A;
+        color: #f4F4F4;
+    }
+a{
+        text-decoration: none;
+        color: #f4F4F4;
+    } 
+p{
+    font-family: "Inter";
+}
+.bodyContainer{
+    width:100%;
+}
+
+/*Images*/
+.img1{
+    width:100%;
+}
+
+/*Columns*/
+.columnNonPadded{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.columnHero{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 35vh 10%;
+    gap:2%;
+}
+
+.columnPadded{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0% 10%;
+}
+
+.columnGallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 2.5% 10%;
+    gap: 2.5%;
+}
+
+/*Navigation*/
+.navBar{
+    width: 100%;
+    position: fixed;
+    padding: 0% 0% 2%;
+    background: linear-gradient(to bottom, rgba(10,10,10,1) 0%,rgba(10,10,10,1) 47%,rgba(10,10,10,0.1) 98%,rgba(10,10,10,0.1) 100%);
+    z-index: 3;
+}
+
+#navContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#navLogo{
+    padding: 2%;
+    font-size: 3em;
+    font-weight: 900;
+    font-family: "Syne";
+    text-transform: uppercase;
+}
+
+.navLinks{
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: "Inter";
+    padding: 4%;
+    text-align: right;
+}
+.navLinks a{
+   padding: 0% 2%;
+}
+
+/*Hero*/
+.heroHeader{
+    font-size: 6em;
+    font-family: "Syne";
+    font-weight: 900;
+    position: absolute;
+    text-transform: uppercase;
+    grid-column: 2;
+    grid-row: 2;
+}
+.heroSub{
+    font-size: 1em;
+    font-family: "Krona One";
+    font-weight: 700;
+}
+
+.imgHero1{
+    width: 100%;
+    height: 16em;
+    object-fit: cover;
+    align-self: center;
+}
+
+.imgHero3{
+    width:100%;
+}
+
+/*About*/
+
+.standBig{
+    font-size: 4em;
+    text-transform: uppercase;
+    font-family: "Krona One";
+    font-weight: 100;
+}
+
+#standBigRed{
+    color:#c42847;
+    text-align: right;
+}
+
+.imgAbout1{
+    width:100%;
+    height: 11rem;
+    object-fit: cover;
+}
+.imgAbout2{
+    width:100%;
+}
+
+.paraBig{
+    font-size: 2.5em;
+    font-family: "Inter";
+    font-weight: 100;
+    padding: 10% 0%;
+}
+
+/*Call To Action*/
+#standBigGreen{
+    color:#87A330;
+    text-align: right;
+}
+
+/*Services*/
+#serviceList{
+    font-size: 3em;
+    font-family: "Inter";
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 3em 3em 3em 2em;
+}
+#servicesTitle{
+    font-size: 3.5em;
+    text-transform: uppercase;
+    font-family: "Krona One";
+    font-weight: 100;
+    padding-top: 7em;
+    align-self: center;
+    justify-self: center;
+}
+
+/*Footer*/
+#logo1{
+    font-size: 6em;
+    font-weight: 900;
+    font-family: "Syne";
+    line-height: 1em;
+}
+#logo2{
+    line-height: 0;
+    text-transform: uppercase;
+    font-family: "Krona One";
+    font-weight: 100;
+    text-align: right;
+}
+#linksF{
+    padding: 10%;
+}
+#linksF a{
+    font-size: 3em;
+    line-height: 1em;
+    text-transform: uppercase;
+    font-family: "Krona One";
+    display: block;
+}
+#logoCombine{
+    align-self: center;
+    justify-self: center;
+}
+
+.imgGallery3{
+    width: 100%;
+    height: 15em;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+   .heroHeader{
+    font-size: 5em;
+   }
+    
+#navContainer{
+    grid-template-columns: .5fr 1fr;
+}
+#navLogo{
+    padding-left: 5%;
+    padding-top: 7%;
+    font-size: 1em;
+}
+.navLinks{
+    font-size: 1em;
+}
+.paraBig{
+    font-size: 1.5em;
+}
+.standBig{
+    font-size: 2em;
+}
+#serviceList{
+    font-size: 2em;
+    padding:0%;
+}
+#servicesTitle{
+    font-size: 3em;
+    padding-top: 0em;
+    padding-bottom: 2em;
+}
+
+#linksF a{
+    font-size: 1.5em;}
+   
+    #logo1{
+        font-size: 2em;
+    }
+    #logo2{
+        font-size: .5em;
+    }
+    .columnHero{
+        padding: 15vh 10%;
+    }
+
+
+}
